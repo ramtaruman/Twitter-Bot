@@ -36,4 +36,4 @@ def twitter_bot(hashtag, delay):
         time.sleep(10)
 
 
-twitter_bot("luminol", 10)
+twitter_bot("#luminol", 10)
