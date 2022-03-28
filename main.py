@@ -4,10 +4,10 @@ import time
 import datetime
 
 
-consumer_key = "yYa55vJbJ6BklwPyE6ad3qGCB"
-consumer_secret = "16xhyn8CD2BpRXPO9BVLYf4Ew0Omoz4fB0Urr5z9mndFvRaOuH"
-access_token = "872514074625449984-G8fOgKmBp97YFbSnaYObYOtR7gGtwTF"
-access_token_secret = "PXVcrq0skuzm4ScP0jIw9CeTva1tsyCdcxpGlINs1kGzv"
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
 
 
 auth = tweepy.OAuth1UserHandler(
