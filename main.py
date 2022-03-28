@@ -1,22 +1,22 @@
 from os import access
 import tweepy
 
-# consumer_key = "yYa55vJbJ6BklwPyE6ad3qGCB"
-# consumer_secret = "16xhyn8CD2BpRXPO9BVLYf4Ew0Omoz4fB0Urr5z9mndFvRaOuH"
-# access_token = "872514074625449984-G8fOgKmBp97YFbSnaYObYOtR7gGtwTF"
-# access_token_secret = "PXVcrq0skuzm4ScP0jIw9CeTva1tsyCdcxpGlINs1kGzv"
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAKpmawEAAAAAd1rZ0iqUio12MfsfjyN5lssCIEI%3DOXz4TYGsGmIe6X8LvAxVgY7nfKG1T2SH4QCZypxoS9Q8NpMtxd"
+consumer_key = ""
+consumer_secret = ""
+access_token = ""
+access_token_secret = ""
 
 
-auth = tweepy.OAuth2BearerHandler(bearer_token)
+auth = tweepy.OAuth1UserHandler(
+    consumer_key, consumer_secret, access_token, access_token_secret)
 
 
 api = tweepy.API(auth)
 
 try:
     api.verify_credentials()
-    print("Everything Works")
+    print("No Error")
 except:
-    print('Something went wrong')
+    print("Error")
 
-api.update_status("Kya chal raha hain bhai bros")
+api.update_status("Insert your message here")
